@@ -6,7 +6,7 @@ const fs = require('fs');
 const transcriptAudio = async () => {
     const response = await client.audio.transcriptions.create({
         model: "gpt-4o-transcribe",
-        file: fs.createReadStream("./audio_criado.mp3"), //ESSE ARQUIVO PRECISA EXISTIR NA RAIZ DO PROJETO
+        file: fs.createReadStream("files/audio_criado.mp3"), //ESSE ARQUIVO PRECISA EXISTIR
     });
 
     console.log(response.text);

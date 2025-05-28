@@ -14,7 +14,7 @@ const createImage = async () => {
     const image_data = response_output[0].result;
 
     if (image_data) {
-        fs.writeFileSync("imagem_criada.png", Buffer.from(image_data, "base64"));
+        fs.writeFileSync("files/imagem_criada.png", Buffer.from(image_data, "base64"));
     }
 }
 

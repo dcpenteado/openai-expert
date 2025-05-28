@@ -11,7 +11,7 @@ const createAudio = async () => {
     });
 
     const buffer = Buffer.from(await response.arrayBuffer());
-    await fs.promises.writeFile('audio_criado.mp3', buffer);
+    await fs.promises.writeFile('files/audio_criado.mp3', buffer);
 }
 
 createAudio();
